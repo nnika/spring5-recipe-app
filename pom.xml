@@ -64,6 +64,9 @@
 		</plugins>
 	</build>
 
+	<!--These lines add two additional repositories from which Maven can fetch dependencies:
+	1. The Spring Snapshots repository for snapshot versions.
+	2. The Spring Milestones repository for milestone releases.-->
 	<repositories>
 		<repository>
 			<id>spring-snapshots</id>
@@ -83,6 +86,12 @@
 		</repository>
 	</repositories>
 
+	<!--The <pluginRepositories> section tells Maven where to find plugins that are not available
+	in the default Central Repository. In this case, it adds two plugin repositories:
+
+	The Spring Snapshots repository for snapshot versions of plugins.
+	The Spring Milestones repository for milestone releases of plugins.
+	-->
 	<pluginRepositories>
 		<pluginRepository>
 			<id>spring-snapshots</id>
