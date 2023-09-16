@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
 	<groupId>guru.springframework</groupId>
 	<artifactId>spring5-recipe-app</artifactId>
-
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -64,9 +64,6 @@
 		</plugins>
 	</build>
 
-	<!--These lines add two additional repositories from which Maven can fetch dependencies:
-	1. The Spring Snapshots repository for snapshot versions.
-	2. The Spring Milestones repository for milestone releases.-->
 	<repositories>
 		<repository>
 			<id>spring-snapshots</id>
@@ -86,12 +83,6 @@
 		</repository>
 	</repositories>
 
-	<!--The <pluginRepositories> section tells Maven where to find plugins that are not available
-	in the default Central Repository. In this case, it adds two plugin repositories:
-
-	The Spring Snapshots repository for snapshot versions of plugins.
-	The Spring Milestones repository for milestone releases of plugins.
-	-->
 	<pluginRepositories>
 		<pluginRepository>
 			<id>spring-snapshots</id>
